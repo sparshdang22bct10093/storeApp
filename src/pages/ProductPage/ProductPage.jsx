@@ -26,7 +26,7 @@ export default function ProductPage() {
         <p>{data.product_desc}</p>
         <div className={style.tags}>
           {
-            data.tags.map(e => <span className={style.tag}>{e}</span> )
+            data.tags.map(e => <span key={e} className={style.tag}>{e}</span> )
           }
         </div>
         <div className={style.wrapper}>

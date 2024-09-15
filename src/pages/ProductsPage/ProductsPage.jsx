@@ -11,7 +11,9 @@ export default function ProductPage({ search }) {
   const params = useParams();
   if (search) {
     const query = params["query"];
-    products_data = products_data.filter((data) => data.tags.includes(query));
+    products_data = products_data.filter((data) =>
+      data.tags.map((e) => e.toLowerCase()).includes(query.toLowerCase())
+    );
   }
   return (
     <>
