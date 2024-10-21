@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 
 import ProductCard from "../../components/ProductCard";
+import { CartContext } from "../../store/CartContext";
 
 import style from "./ProductsPage.module.css";
 
-import products from "../../assets/DummyData";
+// import products from "../../assets/DummyData";
 export default function ProductPage({ search }) {
-  let products_data = products;
+  const context = useContext(CartContext)
+  let products_data = context.products;
   const params = useParams();
   if (search) {
     const query = params["query"];

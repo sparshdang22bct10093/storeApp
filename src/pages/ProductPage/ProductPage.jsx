@@ -4,17 +4,16 @@ import { IoCartOutline } from "react-icons/io5";
 
 import { CartContext } from "../../store/CartContext";
 
-import productsData from "../../assets/DummyData";
 import img from "../../assets/p1.jpg";
 
 import style from "./ProductPage.module.css";
 
 export default function ProductPage() {
+  const context = useContext(CartContext);
   const params = useParams();
   const id = params.productId;
-  const data = productsData.filter((e) => e.product_id === id)[0];
+  const data = context.products.filter((e) => e.product_id === id)[0];
 
-  const context = useContext(CartContext);
 
   return (
     <div className={style.container}>
@@ -24,6 +23,7 @@ export default function ProductPage() {
       <div className={style.info__container}>
         <h1>{data.product_name}</h1>
         <p>{data.product_desc}</p>
+        <p  className={style.stocks}>In Stock : {data.product_stock}</p>
         <div className={style.tags}>
           {
             data.tags.map(e => <span key={e} className={style.tag}>{e}</span> )
@@ -31,7 +31,7 @@ export default function ProductPage() {
         </div>
         <div className={style.wrapper}>
           <div className={style.price}>Rs. {data.product_price}</div>
-          <button onClick={() => context.addItem(id)}>
+          <button onClick={() => context.addItem(id)} disabled={data.product_stock === 0}>
             Add To Cart <IoCartOutline />
           </button>
         </div>

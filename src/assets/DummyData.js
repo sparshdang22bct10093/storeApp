@@ -28,6 +28,7 @@ const data = [
       "A comfortable and stylish white t-shirt made from 100% organic cotton.",
     tags: ["men", "t-shirt", "white", "organic", "cotton"],
     image: img1,
+    product_stock: 50,
   },
   {
     product_id: "CLOTH002",
@@ -37,6 +38,7 @@ const data = [
       "A lightweight and breezy summer dress with a beautiful floral print.",
     tags: ["women", "dress", "summer", "floral", "lightweight"],
     image: img2,
+    product_stock: 30,
   },
   {
     product_id: "CLOTH003",
@@ -46,6 +48,7 @@ const data = [
       "Dark blue slim fit jeans made from stretchable denim fabric for extra comfort.",
     tags: ["men", "jeans", "denim", "slim fit", "blue"],
     image: img3,
+    product_stock: 40,
   },
   {
     product_id: "CLOTH004",
@@ -55,6 +58,7 @@ const data = [
       "Stylish black leather jacket with a sleek design for a bold look.",
     tags: ["women", "jacket", "leather", "black", "bold"],
     image: img4,
+    product_stock: 25,
   },
   {
     product_id: "CLOTH005",
@@ -64,6 +68,7 @@ const data = [
       "A warm hoodie with a front pocket, perfect for cold weather.",
     tags: ["men", "hoodie", "casual", "winter", "pocket"],
     image: img5,
+    product_stock: 60,
   },
   {
     product_id: "CLOTH006",
@@ -73,6 +78,7 @@ const data = [
       "Casual denim shorts with a comfortable fit, perfect for summer.",
     tags: ["women", "shorts", "denim", "summer", "casual"],
     image: img6,
+    product_stock: 45,
   },
   {
     product_id: "CLOTH007",
@@ -82,6 +88,7 @@ const data = [
       "A classic blue shirt for formal occasions, made from premium fabric.",
     tags: ["men", "shirt", "formal", "blue", "classic"],
     image: img7,
+    product_stock: 35,
   },
   {
     product_id: "CLOTH008",
@@ -91,6 +98,7 @@ const data = [
       "High-waisted leggings with a stretchy and breathable material for workouts.",
     tags: ["women", "leggings", "workout", "fitness", "stretchy"],
     image: img8,
+    product_stock: 70,
   },
   {
     product_id: "CLOTH009",
@@ -99,6 +107,7 @@ const data = [
     product_desc: "Comfortable cotton shorts for a relaxed and casual look.",
     tags: ["men", "shorts", "cotton", "casual", "relaxed"],
     image: img9,
+    product_stock: 55,
   },
   {
     product_id: "CLOTH010",
@@ -108,6 +117,7 @@ const data = [
       "A sleeveless top with a minimalistic design, ideal for casual wear.",
     tags: ["women", "top", "sleeveless", "casual", "minimalistic"],
     image: img10,
+    product_stock: 48,
   },
   {
     product_id: "CLOTH011",
@@ -117,6 +127,7 @@ const data = [
       "A stylish bomber jacket with ribbed cuffs and a zip closure.",
     tags: ["men", "jacket", "bomber", "stylish", "ribbed"],
     image: img11,
+    product_stock: 20,
   },
   {
     product_id: "CLOTH012",
@@ -126,6 +137,7 @@ const data = [
       "A chic high-waist skirt with pleats, perfect for formal or casual wear.",
     tags: ["women", "skirt", "high-waist", "pleats", "chic"],
     image: img12,
+    product_stock: 40,
   },
   {
     product_id: "CLOTH013",
@@ -135,6 +147,7 @@ const data = [
       "A breathable and stylish polo shirt, perfect for casual outings.",
     tags: ["men", "polo", "shirt", "casual", "breathable"],
     image: img13,
+    product_stock: 65,
   },
   {
     product_id: "CLOTH014",
@@ -143,6 +156,7 @@ const data = [
     product_desc: "A lightweight cotton tank top for a relaxed summer look.",
     tags: ["women", "tank top", "cotton", "summer", "relaxed"],
     image: img14,
+    product_stock: 50,
   },
   {
     product_id: "CLOTH015",
@@ -152,6 +166,7 @@ const data = [
       "A durable and waterproof jacket, ideal for outdoor adventures.",
     tags: ["men", "jacket", "waterproof", "outdoor", "durable"],
     image: img15,
+    product_stock: 30,
   },
   {
     product_id: "CLOTH016",
@@ -160,6 +175,7 @@ const data = [
     product_desc: "A soft and cozy knit sweater for cold winter days.",
     tags: ["women", "sweater", "knit", "winter", "cozy"],
     image: img16,
+    product_stock: 40,
   },
   {
     product_id: "CLOTH017",
@@ -169,6 +185,7 @@ const data = [
       "Comfortable cargo pants with multiple pockets for an adventurous look.",
     tags: ["men", "pants", "cargo", "adventure", "pockets"],
     image: img17,
+    product_stock: 25,
   },
   {
     product_id: "CLOTH018",
@@ -178,6 +195,7 @@ const data = [
       "A delicate lace blouse with intricate detailing, perfect for formal events.",
     tags: ["women", "blouse", "lace", "formal", "delicate"],
     image: img18,
+    product_stock: 35,
   },
   {
     product_id: "CLOTH019",
@@ -186,6 +204,7 @@ const data = [
     product_desc: "A trendy graphic t-shirt with a cool urban design.",
     tags: ["men", "t-shirt", "graphic", "urban", "trendy"],
     image: img19,
+    product_stock: 75,
   },
   {
     product_id: "CLOTH020",
@@ -195,6 +214,7 @@ const data = [
       "Elegant wide-leg trousers, perfect for both office and casual wear.",
     tags: ["women", "trousers", "wide-leg", "elegant", "office"],
     image: img20,
+    product_stock: 28,
   },
 ];
 

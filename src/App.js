@@ -8,6 +8,7 @@ import CartPage from "./pages/CartPage/CartPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import AuthPage from "./pages/AuthPage/AuthPage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       { path: "about", element: <AboutPage /> },
     ],
   },
+  {
+    path : "/auth",
+    element: <AuthPage/>
+  }
 ]);
 
 function App() {

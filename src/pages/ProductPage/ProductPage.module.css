@@ -88,3 +88,8 @@
   color: black;
   border-radius: 20px;
 }
+
+.stocks{
+  color : red !important;
+  /* border:2px solid red; */
+}
